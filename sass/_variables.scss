@@ -1,31 +1,18 @@
 // material icons path
-$material-font-path: "../fonts" !default;
-
-// Material colors palette
-$red: #F44336 !default;
-$pink: #E91E63 !default;
-$purple: #9C27B0 !default;
-$deeppurple: #673AB7 !default;
-$indigo: #3F51B5 !default;
-$lightblue: #03A9F4 !default;
-$cyan: #00BCD4 !default;
-$teal: #009688 !default;
-$lightgreen: #8BC34A !default;
-$lime: #CDDC39 !default;
-$lightyellow: #FFEB3B !default;
-$orange: #FF9800 !default;
-$deeporange: #FF5722 !default;
-$grey: #9E9E9E !default;
-$bluegrey: #607D8B !default;
-$brown: #795548 !default;
-$lightgrey: #ECECEC !default;
+$font-path: "../fonts";
 
 // Bootstrap shades
-$primary: #4285F4 !default;
-$success: #0F9D58 !default;
-$info: $lightblue !default;
-$warning: $deeporange !default;
-$danger: $red !default;
+$primary: $teal;
+$success: $green;
+$info: $light-blue;
+$warning: $deep-orange;
+$danger: $red;
+
+$brand-primary: $primary;
+$brand-success: $success;
+$brand-danger: $danger;
+$brand-warning: $warning;
+$brand-info: $info;
 
 // Typography elements for Material
 $darkbg-text: rgba(255,255,255,0.84);
@@ -34,7 +21,9 @@ $icon-color: rgba(0,0,0,0.5);
 
 
 // Bootstrap variables
-$btn-default: #FFF;
+$body-bg: #EEEEEE;
+
+$btn-default: transparent;
 $btn-default-text: $lightbg-text;
 
 $btn-primary: $primary;
@@ -68,26 +57,6 @@ $input-warning: $warning;
 $input-success: $success;
 $input-info:    $info;
 
-$navbar-danger-bg: $danger;
-$navbar-inverse-bg: #5264AE;
-$navbar-warning-bg: $warning;
-$navbar-success-bg: $success;
-$navbar-info-bg:    $info;
-$navbar-default-bg: $primary;
-$navbar-color: $darkbg-text;
-$navbar-link-color: $darkbg-text;
-$navbar-link-hover-color: $darkbg-text;
-$navbar-link-hover-bg: transparent;
-$navbar-link-active-color: $darkbg-text;
-$navbar-link-active-bg: rgba(0,0,0,0.05);
-$navbar-link-disabled-color: #E5E5E5;
-$navbar-link-disabled-bg: transparent;
-$navbar-brand-color: $darkbg-text;
-$navbar-toggle-border-color: $darkbg-text;
-$navbar-toggle-hover-bg: transparent;
-$navbar-toggle-icon-bar-bg: $darkbg-text;
-$navbar-border: $darkbg-text;
-
 $alert-success: $success;
 $alert-info: $info;
 $alert-warning: $warning;
@@ -98,3 +67,23 @@ $progress-info: $info;
 $progress-warning: $warning;
 $progress-danger: $danger;
 
+// Global Material variables
+$material-border-radius: 2px;
+$input-underline-color: #D2D2D2;
+
+// Card
+$card-body-text: $lightbg-text;
+$card-body-background: #fff;
+$card-image-headline: #fff;
+
+$text-disabled: #a8a8a8;
+$background-disabled: #eaeaea;
+
+// Checkboxes
+$checkbox-size: 20px;
+$checkbox-animation-ripple: 500ms;
+$checkbox-animation-check: 0.3s;
+
+// Popovers and Popups
+$popover-background: rgba(101, 101, 101, 0.9);
+$popover-color: #ececec;

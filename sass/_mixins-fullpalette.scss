@@ -1,13 +1,31 @@
 @import 'functions';
 
 // given a color build multiples dephs
-@mixin generic-variations-factory($material-color-name, $extra: null) {
-  &-material-#{$material-color-name}#{$extra} {
-    $material-color-full-name: #{$material-color-name} !global;
+@mixin generic-variations-factory-deep($material-color-name, $material-color-number: null, $extra: null) {
+  &-material-#{$material-color-name}#{$material-color-number}#{$extra} {
+    $material-color-full-name: #{$material-color-name}#{$material-color-number} !global;
     $material-color: get-color($material-color-full-name) !global;
     $text-color: contrast-color($material-color, $darkbg-text, $lightbg-text) !global;
     @content;
   }
+}
+
+@mixin generic-variations-factory($material-color-name, $extra: null) {
+  @include generic-variations-factory-deep($material-color-name, null, $extra) { @content; }
+  @include generic-variations-factory-deep($material-color-name, "-50", $extra) { @content; }
+  @include generic-variations-factory-deep($material-color-name, "-100", $extra) { @content; }
+  @include generic-variations-factory-deep($material-color-name, "-200", $extra) { @content; }
+  @include generic-variations-factory-deep($material-color-name, "-300", $extra) { @content; }
+  @include generic-variations-factory-deep($material-color-name, "-400", $extra) { @content; }
+  @include generic-variations-factory-deep($material-color-name, "-500", $extra) { @content; }
+  @include generic-variations-factory-deep($material-color-name, "-600", $extra) { @content; }
+  @include generic-variations-factory-deep($material-color-name, "-700", $extra) { @content; }
+  @include generic-variations-factory-deep($material-color-name, "-800", $extra) { @content; }
+  @include generic-variations-factory-deep($material-color-name, "-900", $extra) { @content; }
+  @include generic-variations-factory-deep($material-color-name, "-A100", $extra) { @content; }
+  @include generic-variations-factory-deep($material-color-name, "-A200", $extra) { @content; }
+  @include generic-variations-factory-deep($material-color-name, "-A400", $extra) { @content; }
+  @include generic-variations-factory-deep($material-color-name, "-A700", $extra) { @content; }
 }
 
 //

@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'Material-Design-Icons';
-    src:url('#{$material-font-path}/Material-Design-Icons.eot?3ocs8m');
-    src:url('#{$material-font-path}/Material-Design-Icons.eot?#iefix3ocs8m') format('embedded-opentype'),
-        url('#{$material-font-path}/Material-Design-Icons.woff?3ocs8m') format('woff'),
-        url('#{$material-font-path}/Material-Design-Icons.ttf?3ocs8m') format('truetype'),
-        url('#{$material-font-path}/Material-Design-Icons.svg?3ocs8m#Material-Design-Icons') format('svg');
+    src:url('#{$font-path}/Material-Design-Icons.eot?3ocs8m');
+    src:url('#{$font-path}/Material-Design-Icons.eot?#iefix3ocs8m') format('embedded-opentype'),
+        url('#{$font-path}/Material-Design-Icons.woff?3ocs8m') format('woff'),
+        url('#{$font-path}/Material-Design-Icons.ttf?3ocs8m') format('truetype'),
+        url('#{$font-path}/Material-Design-Icons.svg?3ocs8m#Material-Design-Icons') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -108,23 +108,23 @@
     border-radius: .1em;
 }
 
-.mdi-spin {
-    -webkit-animation: mdi-spin 2s infinite linear;
-    animation: mdi-spin 2s infinite linear;
+.mdi-adjust-hue {
+    -webkit-animation: mdi-adjust-hue 2s infinite linear;
+    animation: mdi-adjust-hue 2s infinite linear;
     -webkit-transform-origin: 50% 50%;
     -moz-transform-origin: 50% 50%;
     -o-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
 }
 .mdi-pulse {
-    -webkit-animation: mdi-spin 1s steps(8) infinite;
-    animation: mdi-spin 1s steps(8) infinite ;
+    -webkit-animation: mdi-adjust-hue 1s steps(8) infinite;
+    animation: mdi-adjust-hue 1s steps(8) infinite ;
     -webkit-transform-origin: 50% 50%;
     -moz-transform-origin: 50% 50%;
     -o-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
 }
-@-webkit-keyframes mdi-spin {
+@-webkit-keyframes mdi-adjust-hue {
     0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
@@ -134,7 +134,7 @@
         transform: rotate(359deg);
     }
 }
-@keyframes mdi-spin {
+@keyframes mdi-adjust-hue {
     0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
@@ -208,7 +208,6 @@
 
 
 /* Start Icons */
-
 
 .mdi-action-3d-rotation:before {
     content: "\e600";
@@ -978,7 +977,7 @@
     content: "\e6bf";
 }
 
-.mdi-av-queue-music:before {
+.mdi-av-queue-mus:before {
     content: "\e6c0";
 }
 
@@ -3206,7 +3205,7 @@
     content: "\e8ea";
 }
 
-.mdi-social-public:before {
+.mdi-social-publ24px:before {
     content: "\e8eb";
 }
 

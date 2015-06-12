@@ -1,9 +1,10 @@
-@import "colors";
-@import "variables";
-@import "mixins";
-@import "roboto";
-@import "icons-material-design";
-@import "shadows";
+@import "components/colors";
+@import "components/variables";
+@import "components/mixins-fullpalette";
+@import "components/roboto";
+@import "components/icons-material-design";
+@import "components/shadows";
+@import "components/ripples";
 
 body {
   background-color: $body-bg;
@@ -25,10 +26,9 @@ body {
   }
 }
 
-
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
   font-family: "RobotoDraft", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 h5, h6{
@@ -40,32 +40,32 @@ a, a:hover, a:focus {
 }
 
 // Well and Jumbotrons
-@import "welljumbo";
+@import "components/welljumbo";
 
 // Buttons
-@import "buttons";
+@import "components/buttons";
 
 // Checkboxes
-@import "checkboxes";
+@import "components/checkboxes";
 
 // Toggle buttons
-@import "togglebutton";
+@import "components/togglebutton";
 
 // Radios
-@import "radios";
+@import "components/radios";
 
 // Text inputs
-@import "inputs";
+@import "components/inputs";
 
 legend {
   border-bottom: 0;
 }
 
 // Lists
-@import "lists";
+@import "components/lists";
 
 // Navbar
-@import "navbar";
+@import "components/navbar";
 
 .dropdown-menu {
   border: 0;
@@ -85,10 +85,10 @@ legend {
 }
 
 // Alerts
-@import "alerts";
+@import "components/alerts";
 
 // Progress bar
-@import "progress";
+@import "components/progress";
 
 // Typography
 .text-warning {
@@ -107,21 +107,21 @@ legend {
   color: $btn-info;
 }
 
-@import "tabs";
+@import "components/tabs";
 
-@import "popups";
+@import "components/popups";
 
-@import "icons";
+@import "components/icons";
 
-@import "cards";
+@import "components/cards";
 
-@import "dialogs";
+@import "components/dialogs";
 
-@import "labels";
+@import "components/labels";
 
-@import "panels";
+@import "components/panels";
 
-@import "dividers";
+@import "components/dividers";
 
 // Prevent highlight on mobile
 * {
@@ -132,10 +132,8 @@ legend {
   }
 }
 
-@import "ripples";
-
 // External plugins
-@import "plugin-snackbarjs";
-@import "plugin-nouislider";
-@import "plugin-selectize";
-@import "plugin-dropdownjs";
+@import "components/plugin-snackbarjs";
+@import "components/plugin-nouislider";
+@import "components/plugin-selectize";
+@import "components/plugin-dropdownjs";
